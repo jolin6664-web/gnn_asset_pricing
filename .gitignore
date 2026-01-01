@@ -21,32 +21,20 @@ wheels/
 *.egg
 
 # ========== 数据文件（不提交）==========
-# 原始数据 - 绝对不上传
-data/raw/*
-!data/raw/.gitkeep
+data/raw/
+data/processed/
+data/external/
 
-# 处理后的数据 - 通常很大，也不上传
-data/processed/*
-!data/processed/.gitkeep
-
-# 外部数据
-data/external/*
-!data/external/.gitkeep
-
-# 实验结果和模型权重
-experiments/**/*.pt
-experiments/**/*.pth
-experiments/**/*.h5
-experiments/**/*.parquet
-experiments/**/*.npy
-!experiments/.gitkeep
+# ========== 实验结果 ==========
+experiments/
+models/
+checkpoints/
 
 # ========== 虚拟环境 ==========
 venv/
 env/
 gnn_local/
 .gnn_env/
-.vscode/
 
 # ========== Jupyter ==========
 .ipynb_checkpoints/
@@ -65,3 +53,7 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# ========== 日志文件 ==========
+*.log
+logs/
